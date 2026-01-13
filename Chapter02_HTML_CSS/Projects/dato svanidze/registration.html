@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დაჯავშნა - კაფე არომა</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>მაგიდის დაჯავშნა</h1>
+        <nav>
+            <a href="index.html">მთავარი</a>
+            <a href="contact.html">დაჯავშნა</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation-form">
+            <h2>დაჯავშნეთ მაგიდა ონლაინ</h2>
+            <p>შეავსეთ ფორმა და ჩვენ დაგიკავშირდებით დასადასტურებლად</p>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">სახელი და გვარი:</label>
+                    <input type="text" id="name" name="name" placeholder="მაგ: გიორგი გიორგაძე" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">ელ-ფოსტა:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">ტელეფონი:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+995 555 123456" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">თარიღი:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">დრო:</label>
+                    <input type="time" id="time" name="time" min="08:00" max="22:00" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">სტუმრების რაოდენობა:</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">აირჩიეთ</option>
+                        <option value="1">1 ადამიანი</option>
+                        <option value="2">2 ადამიანი</option>
+                        <option value="3">3 ადამიანი</option>
+                        <option value="4">4 ადამიანი</option>
+                        <option value="5">5 ადამიანი</option>
+                        <option value="6+">6 ან მეტი</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">სასურველი ადგილი:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="inside" name="location" value="inside" checked>
+                        <label for="inside">შიგნით</label>
+
+                        <input type="radio" id="terrace" name="location" value="terrace">
+                        <label for="terrace">ტერასაზე</label>
+
+                        <input type="radio" id="window" name="location" value="window">
+                        <label for="window">ფანჯარასთან</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">დამატებითი შენიშვნები:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="განსაკუთრებული მოთხოვნები, ალერგიები და სხვა..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">მსურს მივიღო სიახლეები და აქციები</label>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit">დაჯავშნა</button>
+                    <button type="reset" class="btn-reset">გასუფთავება</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h3>საკონტაქტო ინფორმაცია</h3>
+            <p><strong>ტელეფონი:</strong> +995 32 2 123 456</p>
+            <p><strong>ელ-ფოსტა:</strong> info@cafearoma.ge</p>
+            <p><strong>მისამართი:</strong> რუსთაველის გამზირი 25, თბილისი</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2024 კაფე არომა | ყველა უფლება დაცულია</p>
+    </footer>
+</body>
+</html>
